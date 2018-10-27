@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en-US">
 <title>Web Clone Event</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -7,15 +7,16 @@
 <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
 <link rel="stylesheet" type="text/css" href="style.css">
+
 <body>
 <!--Tabs-->
 <div class="w3-bar w3-theme">
-  <a href="#" class="w3-bar-item w3-button w3-padding-16">Home</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-16">ENIGMA 3.0</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-16">TIET</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">Home</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">ENIGMA 3.0</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-16 w3-hover-red">TIET</a>
 
   <div class="w3-dropdown-hover">
-    <button class="w3-button w3-padding-16">
+    <button class="w3-button w3-padding-16 w3-hover-red">
       MEMBERS <i class="fa fa-caret-down"></i>
     </button>
     <div class="w3-dropdown-content w3-card-4 w3-bar-block">
@@ -25,17 +26,17 @@
       <a class="w3-bar-item w3-button">Event Management</a>
     </div>
   </div>
+  <button class="w3-bar-item w3-button w3-padding-16 w3-hover-red w3-right" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">MEMBER LOGIN</button>
 </div>
-
 <!-- Header -->
-<header class="w3-container w3-theme w3-padding container" id="myHeader">
+<header class="w3-container w3-theme w3-padding" id="myHeader">
   <div class="w3-center">
-    <div class="w3-padding-32">
-      <button class="w3-btn w3-xlarge w3-dark-black w3-border w3-hover-light-grey" onclick="document.getElementById('id01').style.display='block'" style="font-weight:900;">MEMBER LOGIN</button>
+    <div>
+      <img src="header.png" id="logo" height="auto" width="100%">
     </div>
   </div>
 </header>
-
+<!-- Marking Scheme  -->
 <div class="w3-row-padding w3-center w3-margin-top">
   <h3>MARKING SCHEME</h3>
 <div class="w3-third">
@@ -62,23 +63,29 @@
 <div class="w3-third">
   <div class="w3-card w3-container" style="min-height:460px">
   <h3>Design</h3><br>
-  <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+  <i class="fa fa-home w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
   <p>Bold colors and shadows</p>
   <p>Equal across devices</p>
   </div>
 </div>
 </div>
-
+<!-- Activity -->
 <hr>
 <div class="w3-center">
-  <h2>ACTIVITY</h2>
-  <p>The Open Web Application Security Project (OWASP) Student chapters,TIET helps to teach, learn, and inspire application security.
-</p>
+  <span class="w3-tag w3-jumbo w3-blue">A</span>
+  <span class="w3-tag w3-jumbo">C</span>
+  <span class="w3-tag w3-jumbo w3-red">T</span>
+  <span class="w3-tag w3-jumbo">I</span>
+  <span class="w3-tag w3-jumbo w3-green">V</span>
+  <span class="w3-tag w3-jumbo">I</span>
+  <span class="w3-tag w3-jumbo w3-deep-orange">T</span>
+  <span class="w3-tag w3-jumbo">Y</span>
+  <strong>
+  <p>The Open Web Application Security Project (OWASP) Student chapters,TIET helps to teach, learn, and inspire application security.</p>
+  </strong>
 </div>
-</div>
-
+<!-- This Year Event Table -->
 <div class="w3-row-padding">
-
 <div class="w3-half">
 <div class="w3-card white">
   <div class="w3-container w3-red">
@@ -98,7 +105,7 @@
   <div class="w3-container w3-indigo w3-large"><span class="w3-right">Next</span></div>
 </div>
 </div>
-
+<!-- Past Event Table -->
 <div class="w3-half">
 <div class="w3-card white">
   <div class="w3-container w3-theme">
@@ -119,7 +126,7 @@
 </div>
 </div>
 </div>
-
+<!-- Current Event Table -->
 <div class="w3-container">
   <hr>
   <div class="w3-center">
@@ -154,18 +161,14 @@
 </table>
 </div>
 <hr>
-
 <!-- Footer -->
 <footer class="w3-container w3-theme-dark w3-padding-16">
   <h3>Owasp TIET Student Chapter</h3>
   <p>Powered by <a href="https://github.com" target="_blank">github.com</a></p>
-  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
-    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
-    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
-    <i class="fa fa-chevron-circle-up"></i></span></a>
-  </div>
   <p>Made With 💙 By: sniperline047</p>
+  <p>Follow us on facebook:  <span class="w3-button w3-hover-black"><a href="https://www.facebook.com/owasptsc/" target="blank">
+    <img src="facebook.jpg" height="40px" width="40px">
+  </a></span></p>
 </footer>
-
 </body>
 </html>
