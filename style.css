@@ -2,3 +2,17 @@
   width: auto;
   height: auto;
 }
+//animation
+.div {
+	transition: all 1s;
+}
+.div:hover {
+	transform: scale(1.2);
+}
+.turn {
+	transition: all 1s;
+	animation-iteration-count: infinite;
+}
+.turn:hover {
+	transform: rotateY(180deg);
+}
